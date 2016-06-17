@@ -1,14 +1,21 @@
-// node
-// vendors
-import React from 'react';
-// project
-import Menu from './components/Menu';
+import React, { Component, PropTypes } from 'react';
 
-const App = () => (
-  <div className="mainApp">
-    <Menu />
-    <h1>Hello, World!</h1>
-  </div>
-);
+import 'app.scss';
+
+class App extends Component {
+    static propTypes = {
+        className: PropTypes.string,
+    };
+
+    constructor(props) {
+        super(props);
+    }
+
+    render() {
+        return (
+            <div>todo app</div>
+        );
+    }
+}
 
 export default App;
