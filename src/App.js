@@ -24,7 +24,7 @@ class App extends Component {
         const app = firebase.initializeApp(config);
 
         const email = 'jean.timex@gmail.com';
-        const password = '1234566';
+        const password = '123456';
 
         firebase.auth().signInWithEmailAndPassword(email, password).then(function (user) {
             const ref = firebase.database().ref();
